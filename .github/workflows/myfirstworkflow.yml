@@ -19,7 +19,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install pylint
 
-      - name: Check code by using lynt
       - name: Run Pylint
         run: |
           PYTHONPATH=src pylint src/
