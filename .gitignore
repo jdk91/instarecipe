@@ -10,3 +10,7 @@ wheels/
 .venv
 .env
 
+
+#ruff cache
+.ruff_cache
+
