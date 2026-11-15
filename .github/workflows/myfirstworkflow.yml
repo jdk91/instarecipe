@@ -26,3 +26,10 @@ jobs:
       - name: Run Pylint
         run: |
             PYTHONPATH=src uv run pylint src/ --exit-zero
+
+      - name: Run Pylint on a single file
+        uses: pylint-actions/standard@v0.2
+        with:
+          python-version: '3.14'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          args: "src/insta.py"
