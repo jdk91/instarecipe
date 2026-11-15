@@ -3,7 +3,7 @@ name: Code check
 on: [push]
 
 jobs:
-  Run linter:
+  Run-linter:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
